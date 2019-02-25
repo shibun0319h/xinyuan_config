@@ -18,9 +18,9 @@ eureka:
 zuul:
   routes:
     aigouEmployee.serviceId: employee-provider
-    aigouEmployee.path: /employee/**  # Æ¥Åä /xxx¿ªÍ·µÄÇëÇóÓ³Éäµ½user-provider·şÎñÉÏ
-  ignored-services: "*" #user-provider #ºöÂÔÖ±½ÓÊ¹ÓÃ·şÎñÃû·ÃÎÊ  *ºöÂÔËùÓĞµÄ
-  prefix: /aigou   # ·ÃÎÊÇ°×º
+    aigouEmployee.path: /xinyuan/**  # åŒ¹é… /xxxå¼€å¤´çš„è¯·æ±‚æ˜ å°„åˆ°user-provideræœåŠ¡ä¸Š
+  ignored-services: "*" #user-provider #å¿½ç•¥ç›´æ¥ä½¿ç”¨æœåŠ¡åè®¿é—®  *å¿½ç•¥æ‰€æœ‰çš„
+
 
 ---
 spring:
@@ -39,6 +39,6 @@ eureka:
 zuul:
   routes:
     aigouEmployee.serviceId: employee-provider
-    aigouEmployee.path: /employee/**  # Æ¥Åä /xxx¿ªÍ·µÄÇëÇóÓ³Éäµ½user-provider·şÎñÉÏ
-  ignored-services: "*" #user-provider #ºöÂÔÖ±½ÓÊ¹ÓÃ·şÎñÃû·ÃÎÊ  *ºöÂÔËùÓĞµÄ
-  prefix: /aigou   # ·ÃÎÊÇ°×º
+    aigouEmployee.path: /xinyuan/**  # åŒ¹é… /xxxå¼€å¤´çš„è¯·æ±‚æ˜ å°„åˆ°user-provideræœåŠ¡ä¸Š
+  ignored-services: "*" #user-provider #å¿½ç•¥ç›´æ¥ä½¿ç”¨æœåŠ¡åè®¿é—®  *å¿½ç•¥æ‰€æœ‰çš„
+
