@@ -18,9 +18,9 @@ eureka:
 zuul:
   routes:
     aigouEmployee.serviceId: employee-provider
-    aigouEmployee.path: /xinyuan/**  # 匹配 /xxx开头的请求映射到user-provider服务上
+    aigouEmployee.path: /employee/**  # 匹配 /xxx开头的请求映射到user-provider服务上
   ignored-services: "*" #user-provider #忽略直接使用服务名访问  *忽略所有的
-
+  prefix: /xinyuan   # 访问前缀
 
 ---
 spring:
@@ -39,6 +39,7 @@ eureka:
 zuul:
   routes:
     aigouEmployee.serviceId: employee-provider
-    aigouEmployee.path: /xinyuan/**  # 匹配 /xxx开头的请求映射到user-provider服务上
+    aigouEmployee.path: /employee/**  # 匹配 /xxx开头的请求映射到user-provider服务上
   ignored-services: "*" #user-provider #忽略直接使用服务名访问  *忽略所有的
+  prefix: /xinyuan   # 访问前缀
 
