@@ -5,9 +5,9 @@ spring:
 spring:
   profiles: dev
   application:
-    name: employee-provider
+    name: product-provider
 server:
-  port: 8001
+  port: 8002
 eureka:
   client:
     service-url:
@@ -19,9 +19,9 @@ eureka:
 spring:
   profiles: test
   application:
-    name: employee-provider-test
+    name: product-provider-test
 server:
-  port: 8101
+  port: 8102
 eureka:
   client:
     service-url:
