@@ -13,7 +13,7 @@ spring:
     username: root
     password: shibun
 mybatis-plus:
-  mapper-locations: classpath*:ka/shibun/xinyuan/mapper/*Mapper.xml #扫mapper映射
+  mapper-locations: classpath:ka/shibun/xinyuan/mapper/*Mapper.xml #扫mapper映射
   type-aliases-package: ka.shibun.xinyuan.domain,ka.shibun.xinyuan.query  #别名的配置
 server:
   port: 8002
