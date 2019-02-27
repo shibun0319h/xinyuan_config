@@ -5,7 +5,7 @@ spring:
 spring:
   profiles: dev
   application:
-    name: product-provider
+    name: XINYUAN-PRODUCT
 server:
   port: 8002
 eureka:
@@ -19,7 +19,7 @@ eureka:
 spring:
   profiles: test
   application:
-    name: product-provider-test
+    name: XINYUAN-PRODUCT-test
 server:
   port: 8102
 eureka:
