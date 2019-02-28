@@ -13,12 +13,13 @@ eureka:
     service-url:
       defaultZone: http://www.eureka-7001.com:7001/eureka/
   instance:
-    instance-id: gateway-9527.com
+    instance-id: GATEWAY-9527.COM
     prefer-ip-address: true
 zuul:
   routes:
     xinyuanEmployee.serviceId: XINYUAN-EMPLOYEE
     xinyuanEmployee.path: /employee/**  # 匹配 /xxx开头的请求映射到user-provider服务上
+    #产品服务的路由
     xinyuanProduct.serviceId: XINYUAN-PRODUCT
     xinyuanProduct.path: /product/**
   ignored-services: "*" #user-provider #忽略直接使用服务名访问  *忽略所有的
@@ -36,7 +37,7 @@ eureka:
     service-url:
       defaultZone: http://www.eureka-7001.com:7001/eureka/
   instance:
-    instance-id: gateway-9527.com
+    instance-id: GATEWAY-9527.COM
     prefer-ip-address: true
 zuul:
   routes:
