@@ -6,6 +6,14 @@ spring:
   profiles: dev
   application:
     name: XINYUAN-EMPLOYEE
+# 数据源的配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xinyuan?useUnicode=true&characterEncoding=UTF-8  #防止中文乱码
+    username: root
+    password: shibun
+mybatis-plus:
+  type-aliases-package: ka.shibun.xinyuan.domain  #别名的配置
 server:
   port: 8001
 eureka:
@@ -20,6 +28,14 @@ spring:
   profiles: test
   application:
     name: XINYUAN-EMPLOYEE-TEST
+  # 数据源的配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xinyuan?useUnicode=true&characterEncoding=UTF-8  #防止中文乱码
+    username: root
+    password: shibun
+mybatis-plus:
+  type-aliases-package: ka.shibun.xinyuan.domain  #别名的配置
 server:
   port: 8101
 eureka:
